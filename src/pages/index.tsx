@@ -1,4 +1,4 @@
-import { Text, Button, VStack } from '@chakra-ui/react'
+import { Text, Button, VStack, Center } from '@chakra-ui/react'
 import { query as q } from 'faunadb'
 
 import { fauna } from '../services/fauna'
@@ -9,7 +9,7 @@ import Link from 'next/link'
 
 const Home: NextPage = () => {
   return (
-    <>
+    <Center h='80vh'>
       <VStack spacing='12' align='center' justify='center'>
         <Hero />
         <Text px='4' align='center' fontSize='20' fontWeight='bold' my='12' >Agende suas consultas médicas com apenas alguns cliques!</Text>
@@ -25,7 +25,7 @@ const Home: NextPage = () => {
 
         </VStack>
       </VStack>
-    </>
+    </Center>
   )
 }
 

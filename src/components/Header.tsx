@@ -5,7 +5,7 @@ import { RiMenuFill } from 'react-icons/ri'
 export function Header() {
   const { isOpen, onOpen, onClose } = useDisclosure()
   return (
-    <Flex p='2' mb='20'>
+    <Flex p='2'>
       <Button bg='gray.200' onClick={onOpen}>
         <Icon fontSize='24' as={RiMenuFill} />
       </Button>
